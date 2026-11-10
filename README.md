@@ -245,3 +245,17 @@ The exact dataset row indices for each partition are saved in
 - test_indices.csv
 
 These files allow the original data partitions to be reproduced.
+
+### Saved Model Checkpoints
+
+Trained neural network models are saved in Keras format (`.keras`).
+
+The `models/` directory contains:
+
+- Main ANN Model 1 and ANN Model 2 checkpoints.
+- Three-seed checkpoints for both ANN architectures.
+- Original and ablated Model 2 checkpoints for the ablation experiment.
+
+The experiments use three random seeds: 42, 123 and 2026.
+
+These checkpoints allow trained models to be loaded without repeating the training process.
