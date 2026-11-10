@@ -1,0 +1,11 @@
+Original_Row_Index,Error_Type,Actual,Predicted,Predicted_Probability,Age,Job,Education,Balance,Contact,Campaign,Previous_Outcome
+21136,False Positive,0,1,0.5913651,57,retired,secondary,6610,cellular,2,unknown
+33889,False Positive,0,1,0.91832983,30,services,tertiary,803,cellular,1,unknown
+15449,False Positive,0,1,0.61975396,28,services,secondary,458,cellular,3,unknown
+25868,False Positive,0,1,0.51357687,40,blue-collar,secondary,4853,cellular,1,failure
+30687,False Positive,0,1,0.65554744,28,blue-collar,secondary,517,cellular,3,success
+3840,False Negative,1,0,0.29592028,24,blue-collar,primary,656,unknown,1,unknown
+43678,False Negative,1,0,0.26011175,31,blue-collar,secondary,136,cellular,2,failure
+32824,False Negative,1,0,0.03403471,33,blue-collar,unknown,-274,cellular,2,failure
+5846,False Negative,1,0,0.41366714,28,self-employed,tertiary,0,unknown,2,unknown
+38280,False Negative,1,0,0.37836972,55,technician,tertiary,-466,cellular,1,unknown
