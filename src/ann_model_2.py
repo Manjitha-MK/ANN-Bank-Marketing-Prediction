@@ -322,3 +322,31 @@ plt.ylabel("Actual")
 plt.tight_layout()
 plt.savefig("results/ann_model_2_confusion_matrix.png")
 plt.show()
+
+# STEP 20: TRAINING AND VALIDATION LOSS CURVE
+
+plt.figure(figsize=(8, 5))
+
+plt.plot(
+    history_2.history["loss"],
+    label="Training Loss"
+)
+
+plt.plot(
+    history_2.history["val_loss"],
+    label="Validation Loss"
+)
+
+plt.title("ANN Model 2 - Training and Validation Loss")
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
+plt.legend()
+plt.grid(True)
+
+plt.tight_layout()
+
+plt.savefig("results/ann_model_2_loss_curve.png")
+
+plt.show()
+
+print("ANN Model 2 loss curve saved successfully!")
