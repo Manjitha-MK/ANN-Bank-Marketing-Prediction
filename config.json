@@ -1,0 +1,53 @@
+
+{
+    "project": "ANN Bank Marketing Prediction",
+    "dataset": "UCI Bank Marketing",
+    "target": "y",
+    "excluded_features": [
+        "duration"
+    ],
+    "input_features": 50,
+    "data_split": {
+        "training": 0.70,
+        "validation": 0.15,
+        "testing": 0.15,
+        "random_state": 42,
+        "stratified": true
+    },
+    "random_seeds": [
+        42,
+        123,
+        2026
+    ],
+    "training": {
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "loss": "binary_crossentropy",
+        "batch_size": 64,
+        "maximum_epochs": 50,
+        "early_stopping": {
+            "monitor": "val_loss",
+            "patience": 5,
+            "restore_best_weights": true
+        }
+    },
+    "models": {
+        "ann_model_1": {
+            "architecture": [50, 32, 1],
+            "activations": [
+                "ReLU",
+                "Sigmoid"
+            ],
+            "parameters": 1665
+        },
+        "ann_model_2": {
+            "architecture": [50, 64, 32, 1],
+            "activations": [
+                "ReLU",
+                "ReLU",
+                "Sigmoid"
+            ],
+            "parameters": 5377
+        }
+    }
+}

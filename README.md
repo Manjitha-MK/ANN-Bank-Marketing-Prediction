@@ -41,16 +41,31 @@ data/bank+marketing/bank/bank-full.csv
 ANN_Bank_Marketing_Coursework/
 │
 ├── data/
-│   └── bank+marketing/
-│       └── bank/
-│           └── bank-full.csv
+│   ├── bank+marketing/
+│   │   └── bank/
+│   │       └── bank-full.csv
+│   └── splits/
+│       ├── train_indices.csv
+│       ├── validation_indices.csv
+│       └── test_indices.csv
+│
+├── models/
+│   ├── ann_model_1.keras
+│   ├── ann_model_2.keras
+│   ├── ablation/
+│   └── seed_experiments/
 │
 ├── notebooks/
 │   └── ANN_Coursework.ipynb
 │
-├── models/
-│
 ├── results/
+│   ├── ablation_results.csv
+│   ├── ablation_summary.csv
+│   ├── ann_model_1_error_analysis.csv
+│   ├── ann_subgroup_analysis.csv
+│   ├── final_test_individual_results.csv
+│   ├── three_seed_results.csv
+│   └── three_seed_summary.csv
 │
 ├── src/
 │   ├── ann_model_1.py
@@ -60,8 +75,10 @@ ANN_Bank_Marketing_Coursework/
 │   ├── ann_error_analysis.py
 │   ├── ann_subgroup_analysis.py
 │   ├── ann_final_test_evaluation.py
-│   └── ann_inference_pipeline.py
+│   ├── ann_inference_pipeline.py
+│   └── save_data_splits.py
 │
+├── config.json
 ├── requirements.txt
 └── README.md
 ```
