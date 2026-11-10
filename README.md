@@ -259,3 +259,22 @@ The `models/` directory contains:
 The experiments use three random seeds: 42, 123 and 2026.
 
 These checkpoints allow trained models to be loaded without repeating the training process.
+
+### Training Configuration
+
+Both ANN architectures use the following training configuration:
+
+| Parameter | Setting |
+|---|---|
+| Optimizer | Adam |
+| Learning rate | 0.001 |
+| Loss function | Binary Cross-Entropy |
+| Batch size | 64 |
+| Maximum epochs | 50 |
+| Early stopping monitor | Validation loss |
+| Early stopping patience | 5 |
+| Restore best weights | True |
+
+Class weights are applied during training to address class imbalance.
+
+The same training configuration is maintained across the ANN experiments to support fair comparison.
